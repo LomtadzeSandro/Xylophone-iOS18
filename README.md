@@ -1,31 +1,42 @@
-![App Brewery Banner](Documentation/AppBreweryBanner.png)
+# Xylophone – iOS App
 
-# Xylophone
+Xylophone is a simple iOS application built with **Swift**, **UIKit**, and **AVFoundation** that allows users to play musical notes by tapping on color-coded keys.  
+This project demonstrates **audio playback, user interaction, and UI feedback** in iOS.
 
-## Our Goal
+---
 
-The goal of this tutorial is to dive into a simple iOS recipe - how to play sound and use an Apple library called AVFoundation. The most important skill of a great programmer is being able to solve your own problems. We’ll do that by exploring StackOverflow, Apple Documentation and learning how to search for solutions effectively. By learning to use these tools, you’ll be able to start adding custom features to an app and get it to do what you want it to.
+## Features
 
+- Play a different sound for each key
+- Visual feedback on key press (button fades briefly)
+- Lightweight and responsive
+- Demonstrates UI interaction with UIButton and AVAudioPlayer
+- Easy-to-understand MVC structure
 
-## What you will create
+---
 
-You will be making your first musical instrument! Music apps are so popular on the App Store that they even get their own category. So in this module, we’re going to make a colourful XyloPhone app. Get it? Ok, the jokes are bad, but remember, I only wrote the good ones... 
+## Tech Stack
 
-## What you will learn
+- Language: Swift  
+- Framework: UIKit  
+- Audio: AVFoundation  
+- Architecture: MVC  
+- IDE: Xcode  
+- iOS Target: iOS 13+
 
-* How to play sound using AVFoundation and AVAudioPlayer.
-* Understand Apple documentation and how to use StackOverflow.
-* Functions and methods in Swift. 
-* Data types.
-* Swift loops.
-* Variable scope.
-* The ViewController lifecycle.
-* Error handling in Swift.
-* Code refactoring.
-* Basic debugging.
+---
 
+## How It Works
 
->This is a companion project to The App Brewery's Complete App Development Bootcamp, check out the full course at [www.appbrewery.co](https://www.appbrewery.co/)
+1. Each xylophone key is a UIButton with the title corresponding to the sound file (e.g., "C", "D", "E").
+2. When a button is pressed:
+    - `playSound(soundName:)` is called
+    - The corresponding `.wav` file is loaded using `AVAudioPlayer`
+    - The sound is played
+    - Button fades to 50% alpha for 0.2 seconds for visual feedback
+      
+## Author
 
-![End Banner](Documentation/readme-end-banner.png)
+Sandro Lomtadze
+Junior iOS Developer
 
